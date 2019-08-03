@@ -8,7 +8,7 @@
 import UIKit
 import SwipeCellKit
 
-class MailCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class MailCollectionViewController: UICollectionViewController {
     var emails: [Email] = []
     
     var defaultOptions = SwipeOptions()
@@ -21,7 +21,7 @@ class MailCollectionViewController: UICollectionViewController, UICollectionView
     
     override func viewDidLoad() {
         navigationItem.rightBarButtonItem = editButtonItem
-        
+        collectionView.collectionViewLayout = CompositionalLayouts.createSimpleTableLayout()
         resetData()
     }
     
@@ -29,11 +29,7 @@ class MailCollectionViewController: UICollectionViewController, UICollectionView
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return emails.count
     }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: usesTallCells ? 160 : 98)
-    }
-    
+
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let email = emails[indexPath.row]
         

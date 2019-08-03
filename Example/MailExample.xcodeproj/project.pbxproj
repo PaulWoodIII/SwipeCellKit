@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C52034B22F6428A0019D61A /* CompositionalLayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52034A22F6428A0019D61A /* CompositionalLayouts.swift */; };
 		3F234B0A1E44AC2600E22A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F234B041E44AC2600E22A38 /* AppDelegate.swift */; };
 		3F234B0B1E44AC2600E22A38 /* MailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F234B051E44AC2600E22A38 /* MailTableViewController.swift */; };
 		3F234B0C1E44AC2600E22A38 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F234B061E44AC2600E22A38 /* Data.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C52034A22F6428A0019D61A /* CompositionalLayouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayouts.swift; sourceTree = "<group>"; };
 		3F234AE31E44AA5E00E22A38 /* MailExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F234AF21E44AA5E00E22A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F234AFE1E44AB7A00E22A38 /* SwipeCellKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwipeCellKit.xcodeproj; path = ../SwipeCellKit.xcodeproj; sourceTree = "<group>"; };
@@ -60,7 +62,7 @@
 		3F234B071E44AC2600E22A38 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3F234B081E44AC2600E22A38 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F234B091E44AC2600E22A38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B93ECA9C1EDEF1EA00AE05AD /* MailCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailCollectionViewController.swift; sourceTree = "<group>"; };
+		B93ECA9C1EDEF1EA00AE05AD /* MailCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = MailCollectionViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		B93ECA9E1EDEF56300AE05AD /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 				B93ECA9E1EDEF56300AE05AD /* Shared.swift */,
 				3F234B061E44AC2600E22A38 /* Data.swift */,
 				3F234B101E44AC3400E22A38 /* Supporting Files */,
+				3C52034A22F6428A0019D61A /* CompositionalLayouts.swift */,
 			);
 			name = Source;
 			path = MailExample;
@@ -159,7 +162,7 @@
 				TargetAttributes = {
 					3F234AE21E44AA5E00E22A38 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 8XNJ93W9ZP;
+						DevelopmentTeam = BDB4XSJTE3;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -223,6 +226,7 @@
 				3F234B0C1E44AC2600E22A38 /* Data.swift in Sources */,
 				3F234B0B1E44AC2600E22A38 /* MailTableViewController.swift in Sources */,
 				B93ECA9D1EDEF1EA00AE05AD /* MailCollectionViewController.swift in Sources */,
+				3C52034B22F6428A0019D61A /* CompositionalLayouts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -338,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -354,9 +358,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 8XNJ93W9ZP;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
 				INFOPLIST_FILE = MailExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerkoch.MailExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,9 +374,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 8XNJ93W9ZP;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
 				INFOPLIST_FILE = MailExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerkoch.MailExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
